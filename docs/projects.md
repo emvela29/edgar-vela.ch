@@ -1,17 +1,43 @@
 ---
 title: Projects
-description: Engineering and research projects developed by Edgar Marcelo Vela Pinela across biomedical devices, DSP, and embedded systems.
+description: Engineering and research projects developed by Edgar Vela across marine sensor technology, biomedical devices, DSP, and embedded systems.
 ---
 
 # Engineering & Research Projects
 
-A showcase of real-world hardware, embedded systems, and scientific research projects developed across Swiss research institutes, high-tech industry, and university laboratories.
+A showcase of real-world hardware, embedded systems, and scientific research projects developed across Swiss high-tech industry, research institutes, and university laboratories.
 
 ---
 
-## Project 1: Point-of-Care Polymerase Chain Reaction (PCR) Devices
+## Project 1: Marine Sensing & Embedded Hardware Systems
 
-!!! info "Project Context — ETH Zürich & DIAXXO AG (Dec 2020 — Present)"
+!!! info "Project Context — Swiss Ocean Tech Ltd. (March 2023 — Present)"
+    Design, integration, and validation of mission-critical electronic hardware and embedded systems for specialized marine monitoring devices operating in harsh oceanic environments.
+
+### :material-cogs: Engineering Scope & Contributions
+
+- **Hardware Engineering & PCB Design**:
+    - Development and validation of sensor electronics engineered for long-term maritime deployment.
+    - Low-noise analog front-ends, power regulation, and robust digital telemetry interfaces.
+- **Embedded Firmware & Commissioning Tools**:
+    - Embedded microcontroller firmware for sensor acquisition, health monitoring, and data transmission.
+    - Architecture and implementation of automated test jigs and sensor commissioning tools to streamline production calibration.
+- **Environmental Robustness & Testing**:
+    - Environmental verification, vibration stress testing, and EMI/EMC compliance testing for marine certifications.
+
+### :material-code-tags: Technical Stack
+
+| Domain | Tools & Technologies |
+| :--- | :--- |
+| **Electronics CAD** | Altium Designer, Schematic Capture, Multi-layer PCB Layout |
+| **Embedded Systems** | Microcontroller development, Sensor interfaces, Automated test benches |
+| **Domain Expertise** | Marine technology, Sensor calibration, Tough environment reliability |
+
+---
+
+## Project 2: Point-of-Care Polymerase Chain Reaction (PCR) Devices
+
+!!! info "Project Context — ETH Zürich (D-CHAB, FML) & DIAXXO AG (Dec 2020 — Feb 2023)"
     Full-lifecycle hardware and software development for next-generation, rapid Point-of-Care PCR diagnostic instruments, transitioning advanced biotechnology from laboratory prototypes to certified commercial devices.
 
 ### :material-cogs: Engineering Scope & Contributions
@@ -40,7 +66,7 @@ A showcase of real-world hardware, embedded systems, and scientific research pro
 
 ---
 
-## Project 2: Audio-Domain DSP using Antenna Arrays and Beamforming
+## Project 3: Audio-Domain DSP using Antenna Arrays and Beamforming
 
 !!! info "Project Context — Institute for Systems and Applied Electronics (SUPSI, 2018 — 2020)"
     Applied scientific research focused on digital signal processing in the audio domain, deploying spatial filtering and acoustic antenna array beamforming algorithms for directional sound capture and noise cancellation.
@@ -66,7 +92,7 @@ A showcase of real-world hardware, embedded systems, and scientific research pro
 
 ---
 
-## Project 3: Myoelectric (EMG) Signal Acquisition & FPGA Processing
+## Project 4: Myoelectric (EMG) Signal Acquisition & FPGA Processing
 
 !!! info "Project Context — ESPOL & IEEE Publications (2016 — 2018)"
     Design and characterization of open-source biomedical hardware for electromyographic (EMG) signal acquisition, thermal influence modeling, and real-time sensor calibration using embedded FPGA processors.

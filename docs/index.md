@@ -1,22 +1,27 @@
 ---
 title: Home
-description: Professional engineering portfolio of Edgar Marcelo Vela Pinela - Electronics & Hardware Engineer based in Zürich, Switzerland.
+description: Professional portfolio of Edgar Vela - Electronics Hardware Engineer at Swiss Ocean Tech Ltd., based in Zürich, Switzerland.
 ---
 
-# Edgar Marcelo Vela Pinela
+# Edgar Vela
 
-### **Hardware & Electronics Engineer**
+### **Electronics Hardware Engineer at Swiss Ocean Tech Ltd.**
+*Digital Signal Processing Researcher &nbsp;|&nbsp; Embedded Systems Developer &nbsp;|&nbsp; AI Enthusiast*
+
 :material-map-marker: *Zürich, Switzerland* &nbsp;|&nbsp; :material-email: [contact@edgar-vela.ch](mailto:contact@edgar-vela.ch) &nbsp;|&nbsp; :fontawesome-brands-linkedin: [LinkedIn](https://www.linkedin.com/in/emvela/) &nbsp;|&nbsp; :fontawesome-brands-github: [GitHub](https://github.com/emvela29)
 
 ---
 
-## :material-account-tie: About Me
+## :material-account-tie: Summary
 
-I am an **Electronics Engineer with +4 years of specialized experience in applied research and hardware development**, based in Zürich, Switzerland. 
+I am an **Electronics Hardware Engineer at Swiss Ocean Tech Ltd.** based in Zürich, Switzerland, specializing in embedded systems engineering, digital signal processing (DSP) research, and intelligent hardware solutions.
 
-Currently working at **ETH Zürich & DIAXXO AG**, I lead hardware and software engineering for innovative **Polymerase Chain Reaction (PCR)** diagnostic devices. My background bridges the gap between deep scientific research and market-ready industrial hardware: from algorithm conception and multi-layer PCB design to rapid mechanical/electronic prototyping, regulatory component procurement, and technical work instruction (QC) authoring.
+My background spans cutting-edge industrial sensing and scientific research across Switzerland and internationally:
+- **Swiss Ocean Tech Ltd.**: Hardware engineering, sensor validation, and embedded systems development for harsh marine environments.
+- **ETH Zürich (D-CHAB, FML)**: Scientific assistant developing hardware and software for innovative Polymerase Chain Reaction (PCR) devices.
+- **SUPSI (Institute for Systems and Applied Electronics)**: Applied research in microelectronics, bioelectronics, and audio-domain DSP with antenna arrays and beamforming.
 
-I hold a **Master of Science in Engineering (Industrial Technologies)** from **SUPSI** and a **B.Sc. in Electronics and Communications Engineering** from **ESPOL**. I have lived in Switzerland since 2018 (holding a Swiss B-Residence Permit) and thrive in collaborative, cross-functional environments spanning engineering, life sciences, and industrial design.
+I hold a **Master of Science in Engineering (MSE - Industrial Technologies)** from **SUPSI** and a **B.Sc. in Electronics and Communications Engineering** from **ESPOL**. I have lived in Switzerland since 2018 (holding a Swiss B-Residence Permit).
 
 [Explore Projects :octicons-arrow-right-24:](projects.md){ .md-button .md-button--primary }
 [Work Experience :octicons-briefcase-24:](experience.md){ .md-button }
@@ -27,47 +32,39 @@ I hold a **Master of Science in Engineering (Industrial Technologies)** from **S
 
 ## :material-lightning-bolt: Core Competencies
 
-=== ":material-chip: Hardware & ECAD Design"
-    - **Printed Circuit Boards**: Schematic capture and multi-layer layout using **Altium Designer**, **Autodesk Eagle**, **OrCAD-PSpice**, and **Proteus**.
-    - **Rapid Prototyping & CAD**: Electronics packaging and mechanical CAD design to advance prototypes into certified commercial end-products.
-    - **Procurement & Compliance**: Component sourcing aligned with market availability, lifecycle management, and medical/regulatory standards.
-    - **Quality Control**: Formulation of technical work instructions and comprehensive QC procedures for fabrication and assembly.
+=== ":material-chip: Hardware Engineering & ECAD"
+    - **Schematic & PCB Layout**: Multi-layer board design with **Altium Designer**, **Autodesk Eagle**, **OrCAD-PSpice**, and **Proteus**.
+    - **Sensor Systems & Tough Environments**: Design and validation of robust electronics, sensor interfaces, and power systems.
+    - **Prototyping & Mechanical Integration**: 3D CAD modeling for rapid prototyping, packaging, and commercial end-product delivery.
+    - **Manufacturing & QC**: Component procurement aligned with regulatory requirements, production test jigs, and quality control (QC) procedures.
 
 === ":material-memory: Embedded Systems & FPGA"
-    - **Microcontrollers & Platforms**: STM32 (ARM Cortex-M), Microchip PIC (MikroC Pro), and Arduino for robotics and instrumentation.
-    - **FPGA & Logic Design**: Embedded digital design and hardware accelerators using **Intel/Altera Quartus II**.
-    - **System Architecture**: Analysis, architecture definition, and implementation of embedded hardware and firmware modules.
-    - **Multidisciplinary Integration**: Seamless interface between embedded microelectronic systems, biosensors, and actuators.
+    - **Microcontrollers & Platforms**: ARM Cortex-M (**STM32**), Microchip PIC (MikroC Pro), and Arduino platforms.
+    - **FPGA Logic Design**: Hardware acceleration and digital system design using **Intel/Altera Quartus II**.
+    - **Firmware Development**: Deterministic bare-metal C/C++, RTOS paradigms, driver development, and hardware-software bring-up.
+    - **Industrial Protocols**: SPI, I2C, UART, CAN, and specialized sensor telemetry interfaces.
 
-=== ":material-chart-bell-curve-cumulative: DSP & System Modeling"
-    - **Modeling & Simulation**: Dynamic system simulation using **Python**, **MATLAB**, **Simulink**, and **Octave**.
-    - **Digital Signal Processing**: Audio beamforming using antenna arrays, electromyographic (EMG) bio-signal filtering, and spectral feature extraction.
-    - **Estimation & Control**: Implementation of Gradient Descent calibration and Dual Extended Kalman Filters (EKF) on embedded targets.
-    - **Machine Learning**: Practical applications of AI in medicine and robotics.
+=== ":material-chart-bell-curve-cumulative: Digital Signal Processing & AI"
+    - **Signal Processing**: Acoustic beamforming with antenna arrays, electromyographic (EMG) biological signal filtering, and spectral feature extraction.
+    - **Mathematical Modeling**: Dynamic system simulation using **Python**, **MATLAB**, **Simulink**, and **GNU Octave**.
+    - **State Estimation**: Real-time embedded implementation of Dual Extended Kalman Filters (EKF) and Gradient Descent calibration.
+    - **Artificial Intelligence**: Applied machine learning, AI in medicine, and deep learning for signal classification (Keras, NumPy).
 
 ---
 
-## :material-rocket-launch: Featured Work & Engineering Projects
+## :material-rocket-launch: Career Highlights & Projects
 
-| Project / Focus | Institution / Company | Key Technologies | Status |
+| Role / Project | Organization | Core Domain | Period |
 | :--- | :--- | :--- | :--- |
-| **[Innovative PCR Diagnostic Devices](projects.md#project-1-point-of-care-polymerase-chain-reaction-pcr-devices)** | ETH Zürich & DIAXXO AG | Altium Designer, Rapid Prototyping, QC, Thermal & Sensor Control | :material-check-circle:{ .green } Active / Commercialized |
-| **[Audio-Domain DSP & Beamforming Array](projects.md#project-2-audio-domain-dsp-using-antenna-arrays-and-beamforming)** | SUPSI (Applied Electronics) | Spatial DSP, Antenna Arrays, Microelectronics, Embedded | :material-check-circle:{ .green } Research Validated |
-| **[Biomedical EMG Acquisition & FPGA Processing](projects.md#project-3-myoelectric-emg-signal-acquisition-fpga-processing)** | FIEC - ESPOL | Quartus II, MATLAB, Bioelectronics, Kalman Filtering | :material-check-circle:{ .green } Published in IEEE / Journals |
-
----
-
-## :material-school: Academic & Professional Highlights
-
-- **Master of Science in Engineering (MSE)**, Specialization in Industrial Technologies — **SUPSI** (*Southern Switzerland*).
-- **Recipient of the prestigious RETECA Foundation Scholarship** (Sept 2018) for applied research in microelectronics and engineering.
-- **Author/Co-Author of 8+ peer-reviewed publications** in international conferences and biomedical engineering journals.
-- **Former President of ESPOL Robotics Club** (overseeing national/international competitions and FIRST Robotics mentorship in New York).
+| **[Marine Sensing & Embedded Systems](projects.md#project-1-marine-sensing-embedded-hardware-systems)** | **Swiss Ocean Tech Ltd.** | Marine sensor electronics, embedded hardware, validation | 2023 — Present |
+| **[Innovative PCR Diagnostic Devices](projects.md#project-2-point-of-care-polymerase-chain-reaction-pcr-devices)** | **ETH Zürich (D-CHAB)** | High-speed thermal cycling, optical sensors, rapid prototyping | 2020 — 2023 |
+| **[Audio Beamforming & DSP Research](projects.md#project-3-audio-domain-dsp-using-antenna-arrays-and-beamforming)** | **SUPSI (ISEA)** | Acoustic antenna arrays, spatial filtering, microelectronics | 2018 — 2020 |
+| **[Biomedical EMG & FPGA Processing](projects.md#project-4-myoelectric-emg-signal-acquisition-fpga-processing)** | **FIEC - ESPOL** | Bioelectric acquisition, Kalman filtering, published papers | 2016 — 2018 |
 
 ---
 
 ## :material-send: Let's Connect
 
-Whether you want to discuss medical device hardware, embedded development, or explore new engineering opportunities:
+Whether you want to discuss marine sensor technologies, embedded hardware, or explore collaborative opportunities:
 
 [:octicons-paper-airplane-24: Contact Edgar Vela](contact.md){ .md-button .md-button--primary }
