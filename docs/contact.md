@@ -1,49 +1,49 @@
 ---
-title: Contacto
-description: Canales de contacto profesional y redes de Edgar Vela.
+title: Contact
+description: Professional contact channels, social networks, and inquiries for Edgar Vela.
 ---
 
-# Contacto Profesional
+# Professional Contact
 
-Si estás interesado en colaborar en un proyecto, necesitas asesoramiento en diseño de hardware electrónico o deseas explorar oportunidades profesionales, puedes ponerte en contacto a través de los siguientes canales:
+If you are interested in technical collaboration, need advisory on electronic hardware design, or wish to explore career opportunities, feel free to reach out via any of the channels below:
 
 ---
 
-## :material-card-account-mail: Canales Directos
+## :material-card-account-mail: Direct Channels
 
-=== ":material-email: Correo Electrónico"
-    Para consultas técnicas, propuestas laborales o solicitudes de consultoría:
+=== ":material-email: Email"
+    For technical inquiries, proposals, or consulting requests:
     
     :material-email-fast: **[contact@edgar-vela.ch](mailto:contact@edgar-vela.ch)**
     
-    *Tiempo de respuesta habitual: menos de 24-48 horas.*
+    *Typical response time: within 24–48 hours.*
 
 === ":fontawesome-brands-linkedin: LinkedIn"
-    Conéctate conmigo y revisa recomendaciones y red profesional:
+    Connect with me to view endorsements and professional network updates:
     
     :material-link-variant: **[linkedin.com/in/edgar-vela](https://linkedin.com/in/edgar-vela)**
 
 === ":fontawesome-brands-github: GitHub"
-    Explora repositorios públicos, firmware de muestra y herramientas de hardware:
+    Explore open-source repositories, sample firmware, and hardware projects:
     
     :material-github: **[github.com/emvela29](https://github.com/emvela29)**
 
 ---
 
-## :material-map-marker-radius: Ubicación & Disponibilidad
+## :material-map-marker-radius: Location & Availability
 
-- **Ubicación Base**: Suiza (:flag_ch:).
-- **Modalidad de Trabajo**: Híbrido / Remoto / Presencial para fases de laboratorio e integración.
-- **Áreas de Interés**:
-    - Diseño y revisión de esquemáticos / PCB (DFM & EMC review).
-    - Prototipado rápido y *board bring-up*.
-    - Desarrollo de firmware embebido en C/C++ para ARM Cortex-M.
-    - Automatización de bancos de prueba y test de validación.
+- **Primary Location**: Switzerland (:flag_ch:).
+- **Working Model**: Hybrid / Remote / On-site for lab bring-up and system integration phases.
+- **Core Focus Areas**:
+    - Schematic & PCB design review (DFM, SI & EMC audit).
+    - Rapid prototyping & board bring-up.
+    - Embedded firmware development in C/C++ for ARM Cortex-M microcontrollers.
+    - Automated test bench setup & hardware validation.
 
 ---
 
 ## :material-file-document-outline: Curriculum Vitae
 
-Puedes solicitar una versión actualizada en formato PDF enviando un correo a [contact@edgar-vela.ch](mailto:contact@edgar-vela.ch) o descargarlo directamente si está enlazado a continuación:
+You can request an updated resume in PDF format by emailing [contact@edgar-vela.ch](mailto:contact@edgar-vela.ch) or by clicking below:
 
-[:material-download: Solicitar CV en PDF :octicons-arrow-right-24:](mailto:contact@edgar-vela.ch?subject=Solicitud%20de%20CV%20-%20Edgar%20Vela){ .md-button .md-button--primary }
+[:material-download: Request CV in PDF :octicons-arrow-right-24:](mailto:contact@edgar-vela.ch?subject=CV%20Request%20-%20Edgar%20Vela){ .md-button .md-button--primary }

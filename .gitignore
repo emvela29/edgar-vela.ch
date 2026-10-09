@@ -1,4 +1,4 @@
-# Entornos virtuales de Python
+# Python virtual environments
 venv/
 .venv/
 env/
@@ -6,7 +6,7 @@ ENV/
 env.bak/
 venv.bak/
 
-# Archivos compilados y caché de Python
+# Python compiled bytecode and caches
 __pycache__/
 *.py[cod]
 *$py.class
@@ -15,10 +15,10 @@ __pycache__/
 .coverage
 htmlcov/
 
-# Directorio de compilación de MkDocs
+# MkDocs build output directory
 site/
 
-# Archivos del sistema y de editores (IDE)
+# Operating system and IDE files
 .DS_Store
 Thumbs.db
 .vscode/

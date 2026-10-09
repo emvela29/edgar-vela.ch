@@ -1,72 +1,72 @@
 ---
-title: Experiencia
-description: Trayectoria profesional, formación académica y competencias técnicas de Edgar Vela.
+title: Experience
+description: Professional background, academic education, and technical competencies of Edgar Vela.
 ---
 
-# Experiencia & Formación
-
----
-
-## :material-briefcase: Trayectoria Profesional
-
-### **Ingeniero de Hardware & Desarrollo Electrónico**
-**Empresa de Tecnología / Ingeniería** | *Suiza*  
-*2022 — Presente*
-
-- Liderazgo en el diseño esquemático y ruteo de PCBs de 4 a 8 capas para dispositivos industriales y de comunicaciones.
-- Definición de especificaciones técnicas, selección de componentes con análisis de cadena de suministro y mitigación de obsolescencia.
-- Implementación y ejecución de campañas de pruebas de laboratorio: integridad de señal, caracterización de consumo y precumplimiento EMC (emisiones conducidas y radiadas).
-- Colaboración estrecha con fabricantes de PCB y casas de ensamble (EMS) para optimización DFM (*Design for Manufacturing*) y DFT (*Design for Test*).
-- Creación de firmware en C/C++ para validación de prototipos (*Bring-up board*) y automatización de bancos de prueba en Python.
-
-??? example "Logros Clave en el Rol"
-    - Reducción del ciclo de prototipado en un 25% mediante la estandarización de módulos de alimentación y bloques reutilizables en Altium Designer.
-    - Resolución de problemas complejos de ruido electromagnético en buses SPI/I2C de alta velocidad mediante rediseño de planos de masa y desacople estratégico.
+# Experience & Education
 
 ---
 
-### **Ingeniero de Sistemas Embebidos & Firmware**
-**Compañía de Automatización / I+D**  
+## :material-briefcase: Professional Experience
+
+### **Hardware & Electronics Development Engineer**
+**Technology & Engineering Firm** | *Switzerland*  
+*2022 — Present*
+
+- Lead the schematic design and PCB layout of 4- to 8-layer boards for industrial IoT and communication systems.
+- Define hardware specifications, perform component selection, supply chain risk analysis, and lifecycle/obsolescence mitigation.
+- Plan and execute laboratory verification campaigns: signal integrity, power consumption profiling, and EMC pre-compliance (conducted and radiated emissions).
+- Collaborate closely with PCB fabrication and EMS assembly partners to enforce DFM (*Design for Manufacturing*) and DFT (*Design for Test*) guidelines.
+- Develop board bring-up firmware in C/C++ and automated test benches in Python for production line test jigs.
+
+??? example "Key Role Achievements"
+    - Decreased prototype turnaround cycle by 25% by standardizing reusable power supply blocks and layout templates in Altium Designer.
+    - Diagnosed and resolved EMI noise coupling on high-speed SPI/I2C buses through optimized ground plane stitching and strategic decoupling.
+
+---
+
+### **Embedded Systems & Firmware Engineer**
+**Automation & R&D Solutions**  
 *2020 — 2022*
 
-- Desarrollo de controladores para actuadores y adquisición de datos en plataformas STM32 y ESP32.
-- Implementación de pilas de comunicación industriales (CAN bus, Modbus RTU/TCP).
-- Diseño de interfaces analógicas de sensado (acondicionamiento con amplificadores operacionales, filtros activos y ADCs de 24 bits).
-- Depuración a nivel de hardware y protocolo utilizando osciloscopios, analizadores lógicos y Wireshark.
+- Developed device drivers and control firmware on STM32 and ESP32 microcontroller platforms.
+- Implemented industrial communication stacks (CAN bus, Modbus RTU/TCP).
+- Designed precision analog front-ends (op-amp signal conditioning, active filtering, and 24-bit delta-sigma ADCs).
+- Debugged hardware/protocol-level issues using oscilloscopes, logic analyzers, and Wireshark.
 
 ---
 
-## :material-school: Formación Académica
+## :material-school: Education
 
-### **Máster / Grado en Ingeniería Electrónica / Eléctrica**
-**Universidad Técnica**  
-*Graduado con Honores / Especialidad en Sistemas Electrónicos y Potencia*
+### **M.Sc. / B.Sc. in Electrical & Electronics Engineering**
+**Technical University**  
+*Graduated with Honors / Specialization in Electronic Systems & Power Electronics*
 
-- **Áreas principales**: Electrónica analógica y digital avanzada, procesado digital de señales (DSP), compatibilidad electromagnética (EMC), diseño VLSI/FPGA.
-
----
-
-## :material-certificate: Certificaciones & Cursos Continuos
-
-- **Advanced High-Speed PCB Layout & Signal Integrity** — Diseño de impedancia controlada y apilados multicapa.
-- **Embedded RTOS Architecture & Concurrency** — Diseño de sistemas multihilo en FreeRTOS/Zephyr.
-- **EMC by Design (Electromagnetic Compatibility)** — Técnicas de mitigación de emisiones e inmunidad según estándares IEC/CISPR.
+- **Core Coursework**: Advanced Analog & Digital Electronics, Digital Signal Processing (DSP), Electromagnetic Compatibility (EMC), VLSI/FPGA Design.
 
 ---
 
-## :material-tools: Matriz de Habilidades Técnicas
+## :material-certificate: Certifications & Continuing Education
 
-=== ":material-laptop: CAD & Simulación"
+- **Advanced High-Speed PCB Layout & Signal Integrity** — Controlled impedance and high-density interconnect (HDI) routing.
+- **Embedded RTOS Architecture & Concurrency** — Multi-threaded design using FreeRTOS and Zephyr RTOS.
+- **EMC by Design (Electromagnetic Compatibility)** — Emission mitigation and RF immunity design according to IEC/CISPR standards.
+
+---
+
+## :material-tools: Technical Skills Matrix
+
+=== ":material-laptop: ECAD & Simulation"
     - **ECAD**: Altium Designer, KiCad, OrCAD Capture, Autodesk Eagle.
-    - **Simulación**: LTspice, Simscape, MATLAB, Qucs.
-    - **Mecánica / CAD 3D**: SolidWorks, Fusion 360 (integración MCAD-ECAD, STEP export).
+    - **Simulation**: LTspice, Simscape, MATLAB, Qucs.
+    - **Mechanical CAD**: SolidWorks, Fusion 360 (ECAD-MCAD integration, 3D clearance checks).
 
-=== ":material-code-braces: Lenguajes & Software"
-    - **Firmware**: C (C99/C11), C++ (C++17), Ensamblador ARM.
-    - **Scripting & Automatización**: Python (PyVISA, NumPy, matplotlib, PyQt), Bash.
-    - **Control de Versiones & CI/CD**: Git, GitHub Actions, GitLab CI.
+=== ":material-code-braces: Firmware & Software"
+    - **Firmware**: C (C99/C11), C++ (C++17), ARM Assembly.
+    - **Scripting & Automation**: Python (PyVISA, NumPy, matplotlib, PyQt), Bash.
+    - **Version Control & CI/CD**: Git, GitHub Actions, GitLab CI.
 
-=== ":material-gauge: Instrumentación & Laboratorio"
-    - Osciloscopios digitales (DSO/MSO), analizadores de espectro RF, analizadores de redes vectoriales (VNA).
-    - Cargas electrónicas dinámicas, generadores de funciones arbitrarias.
-    - Estaciones de soldadura SMD (aire caliente, microscopio estereoscópico, microsoldadura 0402 / QFN / BGA rework).
+=== ":material-gauge: Laboratory & Instrumentation"
+    - Oscilloscopes (DSO/MSO), RF Spectrum Analyzers, Vector Network Analyzers (VNA).
+    - Programmable DC electronic loads, arbitrary waveform generators.
+    - SMD soldering stations (hot-air rework, stereo microscope inspection, 0402 / QFN / BGA component handling).

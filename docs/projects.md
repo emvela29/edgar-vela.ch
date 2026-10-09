@@ -1,98 +1,98 @@
 ---
-title: Proyectos
-description: Casos de estudio y proyectos de ingeniería electrónica, diseño de hardware y firmware desarrollados por Edgar Vela.
+title: Projects
+description: Hardware engineering case studies, PCB design, and embedded systems developed by Edgar Vela.
 ---
 
-# Proyectos de Ingeniería
+# Engineering Projects
 
-A continuación se presentan proyectos representativos que abarcan desde el diseño esquemático y ruteo de PCB multicapa hasta el desarrollo de firmware embebido y la validación en banco de pruebas.
+Below is a curated selection of engineering projects spanning high-speed multi-layer PCB design, bare-metal & RTOS firmware development, and hands-on laboratory validation.
 
 ---
 
-## Proyecto 1: Nodo Sensor IoT Industrial Ultra-Low Power
+## Project 1: Ultra-Low Power Industrial IoT Sensor Node
 
-!!! info "Resumen del Proyecto"
-    Diseño integral de un dispositivo autónomo de monitoreo ambiental y de vibración industrial de bajo consumo, con comunicación inalámbrica de largo alcance (LoRaWAN) y conectividad local BLE para diagnóstico y parametrización mediante aplicación móvil.
+!!! info "Project Overview"
+    End-to-end design of an autonomous, low-power industrial condition-monitoring node featuring long-range wireless connectivity (LoRaWAN) and local Bluetooth Low Energy (BLE) for field diagnosis and parameterization via a mobile app.
 
-### :material-cogs: Especificaciones Técnicas
+### :material-cogs: Technical Specifications
 
-- **Unidad de Procesamiento**: Microcontrolador STM32L4 (ARM Cortex-M4 @ 80 MHz con FPU).
-- **Conectividad**: Módulo LoRaWAN SX1262 (bandas 868 MHz / 915 MHz) y transceptor Bluetooth Low Energy (nRF52832).
-- **Sensores Integrados**:
-    - Acelerómetro triaxial de precisión (SPI, FIFO integrado para detección de anomalías de vibración).
-    - Sensor ambiental de alta precisión (temperatura, humedad relativa y presión barométrica).
-- **Alimentación**: Batería Li-SOCl2 (3.6 V) con regulador Buck nano-quiescent (< 1 µA de corriente estática).
-- **Durabilidad Estimada**: > 5 años de operación con envíos periódicos cada 15 minutos.
-- **Topología de PCB**: 4 capas (FR4 TG150, apilado SIG-GND-PWR-SIG, impedancia controlada a 50 Ω para línea RF).
+- **Processing Unit**: STM32L4 Microcontroller (ARM Cortex-M4 @ 80 MHz with FPU).
+- **Connectivity**: SX1262 LoRaWAN transceiver (868 MHz / 915 MHz bands) and nRF52832 Bluetooth Low Energy SoC.
+- **Integrated Sensors**:
+    - Low-noise triaxial accelerometer (SPI interface with internal FIFO for vibration anomaly detection).
+    - Environmental sensor measuring temperature, relative humidity, and barometric pressure.
+- **Power Architecture**: 3.6 V Li-SOCl2 primary battery with nano-quiescent buck converter (< 1 µA quiescent current).
+- **Battery Life Target**: > 5 years autonomous operation with 15-minute transmission intervals.
+- **PCB Topology**: 4-layer stackup (FR4 TG150, SIG-GND-PWR-SIG, 50 Ω controlled impedance for the RF trace).
 
-### :material-code-tags: Stack Tecnológico
+### :material-code-tags: Technical Stack
 
-| Dominio | Herramientas & Tecnologías |
+| Domain | Tools & Technologies |
 | :--- | :--- |
-| **Diseño de Hardware** | Altium Designer, simulación SPICE de fuentes conmutadas, análisis DFM/DFA |
-| **Firmware Embebido** | C (C99), STM32CubeIDE, FreeRTOS, stack LoRaWAN semtech, BLE GAP/GATT |
-| **Validación & Test** | Otii Arc (Power Profiler), Osciloscopio Keysight InfiniiVision, Analizador de Espectro |
+| **Hardware Design** | Altium Designer, SPICE power supply simulation, DFM/DFA analysis |
+| **Embedded Firmware** | C (C99), STM32CubeIDE, FreeRTOS, Semtech LoRaWAN stack, BLE GAP/GATT services |
+| **Validation & Test** | Otii Arc (Power Profiler), Keysight InfiniiVision Oscilloscope, RF Spectrum Analyzer |
 
-### :material-check-decagram: Resultados & Logros
+### :material-check-decagram: Key Results & Achievements
 
-- **Consumo en reposo (*Sleep Mode*)**: Se redujo la corriente de espera global a **4.2 µA**, superando el objetivo inicial de 8 µA.
-- **Integridad RF**: Pérdidas de retorno (*Return Loss*) $S_{11} < -18 \text{ dB}$ en la banda de 868 MHz tras el ajuste de red de adaptación Pi.
-- **Producción**: Fabricación y ensamble exitoso de un primer lote piloto de 50 unidades sin fallos de manufactura (DFT implementado con puntos de test de aguja).
+- **Sleep Current**: Achieved an average quiescent sleep current of **4.2 µA**, exceeding the initial target of 8 µA.
+- **RF Performance**: Measured return loss $S_{11} < -18 \text{ dB}$ at 868 MHz following Pi-network impedance tuning.
+- **Production Yield**: Successfully manufactured and assembled a pilot batch of 50 units with zero assembly defects (DFT implemented with bed-of-nails test points).
 
 ---
 
-## Proyecto 2: Controlador de Motor BLDC de Alta Eficiencia
+## Project 2: High-Efficiency BLDC Motor Controller
 
-!!! info "Resumen del Proyecto"
-    Inversor trifásico compacto para accionamiento de motores BLDC/PMSM con control orientado al campo (FOC), diseñado para robótica móvil y actuadores de alta densidad de par.
+!!! info "Project Overview"
+    Compact three-phase inverter for driving BLDC and permanent magnet synchronous motors (PMSM) using Field-Oriented Control (FOC), engineered for mobile robotics and high torque-density actuators.
 
-### :material-cogs: Especificaciones Técnicas
+### :material-cogs: Technical Specifications
 
-- **Rango de Tensión de Entrada**: 18 V a 52 V DC (soporta paquetes Li-Ion hasta 12S).
-- **Capacidad de Corriente**: 30 A continuos / 70 A pico con disipación pasiva optimizada.
-- **Etapa de Potencia**: Medio puente trifásico con transistores MOSFET de baja $R_{DS(on)}$ (1.8 mΩ) y drivers de compuerta aislados con protección *shoot-through*.
-- **Medición de Corriente**: Shunts triaxiales de bajo valor con amplificadores de sensado de corriente bidireccionales de bajo drift térmico.
-- **Interfaces de Comunicación**: Bus CAN-FD aislado galvanicamente y puerto UART/USB para telemetría.
-- **Frecuencia PWM**: 20 kHz a 40 kHz con muestreo de ADC sincronizado en el centro del período PWM.
-- **Topología de PCB**: 6 capas con cobre de 2 oz en capas externas y 3 oz en capas internas para gestión de altas corrientes y disipación térmica.
+- **Input Voltage Range**: 18 V to 52 V DC (supporting up to 12S Li-Ion battery packs).
+- **Current Rating**: 30 A continuous / 70 A peak with passive thermal dissipation.
+- **Power Stage**: Three-phase half-bridge utilizing ultra-low $R_{DS(on)}$ MOSFETs (1.8 mΩ) and isolated gate drivers with hardware shoot-through protection.
+- **Current Sensing**: Low-inductance tri-shunt configuration with low-drift bidirectional current sense amplifiers.
+- **Communication Interfaces**: Galvanically isolated CAN-FD bus and high-speed UART/USB telemetry port.
+- **PWM Frequency**: 20 kHz to 40 kHz with center-aligned PWM and ADC sampling synchronized at the midpoint.
+- **PCB Topology**: 6-layer heavy-copper board (2 oz outer, 3 oz inner layers) for thermal conduction and low ESR power routing.
 
-### :material-code-tags: Stack Tecnológico
+### :material-code-tags: Technical Stack
 
-| Dominio | Herramientas & Tecnologías |
+| Domain | Tools & Technologies |
 | :--- | :--- |
-| **Diseño de Hardware** | KiCad 8.0, análisis térmico térmico FEA, modelado de planos de masa |
-| **Algoritmos de Control** | Algoritmo FOC (Transformadas de Clarke/Park, PWM Vectorial Espacial - SVPWM), control de bucle cerrado de corriente y velocidad |
-| **Entorno de Firmware** | C++ embebido moderno (C++17), CMSIS-DSP, arquitectura sin bloqueo |
-| **Herramientas de Validación** | Banco de carga dinamométrica, sondas de corriente Hall, cámara termográfica FLIR |
+| **Hardware Design** | KiCad 8.0, FEA thermal simulation, continuous ground plane design |
+| **Control Algorithms** | FOC (Clarke/Park transformations, Space Vector PWM - SVPWM), closed-loop current and velocity PI loops |
+| **Firmware Architecture** | Embedded C++ (C++17), CMSIS-DSP, deterministic non-blocking design |
+| **Validation Instruments** | Dynamometer test bench, Hall-effect current probes, FLIR thermal imaging |
 
-### :material-check-decagram: Resultados & Logros
+### :material-check-decagram: Key Results & Achievements
 
-- **Eficiencia Energética**: Eficiencia pico del inversor del **96.8%** a plena carga nominal.
-- **Respuesta Dinámica**: Bucle de corriente ejecutado a **20 kHz** en menos de 12 µs de tiempo de cómputo en el microcontrolador.
-- **Seguridad**: Implementación de protecciones en hardware por sobrecorriente por ciclo de reloj (*Cycle-by-cycle trip*), sobretensión y desconexión por sobrecalentamiento.
+- **Power Efficiency**: Peak inverter efficiency of **96.8%** at rated nominal load.
+- **Dynamic Control**: Current control loop executed at **20 kHz** with less than 12 µs calculation latency on the MCU.
+- **Fault Protection**: Hardware-level cycle-by-cycle overcurrent trip, bus overvoltage clamping, and over-temperature shutdown.
 
 ---
 
-## :material-folder-multiple: Plantilla para Nuevos Proyectos
+## :material-folder-multiple: Template for New Projects
 
-Para agregar proyectos adicionales a este portafolio, utiliza la siguiente estructura estándar:
+To document additional projects in this portfolio, use the following standardized structure:
 
 ```markdown
-## Nombre del Proyecto
+## Project Name
 
-!!! info "Resumen del Proyecto"
-    Descripción general del objetivo y valor del diseño.
+!!! info "Project Overview"
+    High-level summary of the engineering objectives and product value.
 
-### :material-cogs: Especificaciones Técnicas
-- **Parámetro 1**: Detalle.
-- **Parámetro 2**: Detalle.
+### :material-cogs: Technical Specifications
+- **Parameter 1**: Description.
+- **Parameter 2**: Description.
 
-### :material-code-tags: Stack Tecnológico
-| Dominio | Herramientas & Tecnologías |
+### :material-code-tags: Technical Stack
+| Domain | Tools & Technologies |
 | :--- | :--- |
-| Hardware | Herramientas CAD, simulaciones |
-| Firmware | Lenguaje, RTOS, librerías |
+| Hardware | ECAD software, simulations, layout standards |
+| Firmware | Languages, RTOS, driver libraries |
 
-### :material-check-decagram: Resultados & Logros
-- Métricas cuantificables obtenidas durante la validación.
+### :material-check-decagram: Key Results & Achievements
+- Quantifiable metrics verified during lab validation.
 ```

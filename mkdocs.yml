@@ -1,28 +1,28 @@
 site_name: Edgar Vela | Hardware Engineer
 site_url: https://edgar-vela.ch
 site_author: Edgar Vela
-site_description: Portafolio profesional de Edgar Vela - Ingeniero de Hardware y Electrónica especializado en diseño de PCB, firmware embebido y validación de sistemas.
+site_description: Professional portfolio of Edgar Vela - Hardware & Embedded Systems Engineer specializing in PCB design, firmware development, and system validation.
 
 theme:
   name: material
-  language: es
+  language: en
   palette:
-    # Modo Claro
+    # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
       accent: deep orange
       toggle:
         icon: material/weather-night
-        name: Cambiar a modo oscuro
-    # Modo Oscuro
+        name: Switch to dark mode
+    # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
       accent: deep orange
       toggle:
         icon: material/weather-sunny
-        name: Cambiar a modo claro
+        name: Switch to light mode
   font:
     text: Inter
     code: JetBrains Mono
@@ -50,7 +50,7 @@ extra:
       name: LinkedIn
     - icon: fontawesome/solid/envelope
       link: mailto:contact@edgar-vela.ch
-      name: Correo electrónico
+      name: Email
 
 markdown_extensions:
   - admonition
@@ -79,7 +79,7 @@ plugins:
       minify_html: true
 
 nav:
-  - Inicio: index.md
-  - Proyectos: projects.md
-  - Experiencia: experience.md
-  - Contacto: contact.md
+  - Home: index.md
+  - Projects: projects.md
+  - Experience: experience.md
+  - Contact: contact.md
