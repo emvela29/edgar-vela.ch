@@ -1,98 +1,92 @@
 ---
 title: Projects
-description: Hardware engineering case studies, PCB design, and embedded systems developed by Edgar Vela.
+description: Engineering and research projects developed by Edgar Marcelo Vela Pinela across biomedical devices, DSP, and embedded systems.
 ---
 
-# Engineering Projects
+# Engineering & Research Projects
 
-Below is a curated selection of engineering projects spanning high-speed multi-layer PCB design, bare-metal & RTOS firmware development, and hands-on laboratory validation.
+A showcase of real-world hardware, embedded systems, and scientific research projects developed across Swiss research institutes, high-tech industry, and university laboratories.
 
 ---
 
-## Project 1: Ultra-Low Power Industrial IoT Sensor Node
+## Project 1: Point-of-Care Polymerase Chain Reaction (PCR) Devices
 
-!!! info "Project Overview"
-    End-to-end design of an autonomous, low-power industrial condition-monitoring node featuring long-range wireless connectivity (LoRaWAN) and local Bluetooth Low Energy (BLE) for field diagnosis and parameterization via a mobile app.
+!!! info "Project Context — ETH Zürich & DIAXXO AG (Dec 2020 — Present)"
+    Full-lifecycle hardware and software development for next-generation, rapid Point-of-Care PCR diagnostic instruments, transitioning advanced biotechnology from laboratory prototypes to certified commercial devices.
 
-### :material-cogs: Technical Specifications
+### :material-cogs: Engineering Scope & Contributions
 
-- **Processing Unit**: STM32L4 Microcontroller (ARM Cortex-M4 @ 80 MHz with FPU).
-- **Connectivity**: SX1262 LoRaWAN transceiver (868 MHz / 915 MHz bands) and nRF52832 Bluetooth Low Energy SoC.
-- **Integrated Sensors**:
-    - Low-noise triaxial accelerometer (SPI interface with internal FIFO for vibration anomaly detection).
-    - Environmental sensor measuring temperature, relative humidity, and barometric pressure.
-- **Power Architecture**: 3.6 V Li-SOCl2 primary battery with nano-quiescent buck converter (< 1 µA quiescent current).
-- **Battery Life Target**: > 5 years autonomous operation with 15-minute transmission intervals.
-- **PCB Topology**: 4-layer stackup (FR4 TG150, SIG-GND-PWR-SIG, 50 Ω controlled impedance for the RF trace).
+- **Electronic Hardware Design**:
+    - Complete schematic design and multi-layer PCB layout using **Altium Designer** for ultra-fast thermal cycling, optical fluorescence measurement, and power management.
+    - Precision analog signal acquisition circuitry for optical biosensors with high signal-to-noise ratio (SNR).
+    - Design for electromagnetic compatibility (EMC/EMI) and low-noise operational conditions.
+- **Mechanical & Packaging CAD**:
+    - CAD design for rapid prototyping (3D printing, CNC machining) through to injection-molding production housings.
+    - Thermal management integration and mechanical tolerance verification.
+- **Regulatory, Procurement & Quality Control**:
+    - Component selection and strategic procurement complying with global supply chain availability and medical device standards.
+    - Authorship of comprehensive manufacturing work instructions and formal Quality Control (QC) verification protocols.
+- **Validation & Testing**:
+    - Testbench setup for automated board bring-up, sensor calibration, thermal profiling, and biological assay repeatability.
 
 ### :material-code-tags: Technical Stack
 
 | Domain | Tools & Technologies |
 | :--- | :--- |
-| **Hardware Design** | Altium Designer, SPICE power supply simulation, DFM/DFA analysis |
-| **Embedded Firmware** | C (C99), STM32CubeIDE, FreeRTOS, Semtech LoRaWAN stack, BLE GAP/GATT services |
-| **Validation & Test** | Otii Arc (Power Profiler), Keysight InfiniiVision Oscilloscope, RF Spectrum Analyzer |
-
-### :material-check-decagram: Key Results & Achievements
-
-- **Sleep Current**: Achieved an average quiescent sleep current of **4.2 µA**, exceeding the initial target of 8 µA.
-- **RF Performance**: Measured return loss $S_{11} < -18 \text{ dB}$ at 868 MHz following Pi-network impedance tuning.
-- **Production Yield**: Successfully manufactured and assembled a pilot batch of 50 units with zero assembly defects (DFT implemented with bed-of-nails test points).
+| **Electronics CAD** | Altium Designer, SPICE modeling, Multi-layer PCB design |
+| **Mechanical Design** | Mechanical CAD modeling, rapid 3D prototyping, thermal integration |
+| **Embedded & Software** | Embedded C/C++, test scripting, sensor acquisition algorithms |
+| **Compliance & QC** | Regulatory component sourcing, QC protocols, standard work instructions |
 
 ---
 
-## Project 2: High-Efficiency BLDC Motor Controller
+## Project 2: Audio-Domain DSP using Antenna Arrays and Beamforming
 
-!!! info "Project Overview"
-    Compact three-phase inverter for driving BLDC and permanent magnet synchronous motors (PMSM) using Field-Oriented Control (FOC), engineered for mobile robotics and high torque-density actuators.
+!!! info "Project Context — Institute for Systems and Applied Electronics (SUPSI, 2018 — 2020)"
+    Applied scientific research focused on digital signal processing in the audio domain, deploying spatial filtering and acoustic antenna array beamforming algorithms for directional sound capture and noise cancellation.
 
-### :material-cogs: Technical Specifications
+### :material-cogs: Engineering Scope & Contributions
 
-- **Input Voltage Range**: 18 V to 52 V DC (supporting up to 12S Li-Ion battery packs).
-- **Current Rating**: 30 A continuous / 70 A peak with passive thermal dissipation.
-- **Power Stage**: Three-phase half-bridge utilizing ultra-low $R_{DS(on)}$ MOSFETs (1.8 mΩ) and isolated gate drivers with hardware shoot-through protection.
-- **Current Sensing**: Low-inductance tri-shunt configuration with low-drift bidirectional current sense amplifiers.
-- **Communication Interfaces**: Galvanically isolated CAN-FD bus and high-speed UART/USB telemetry port.
-- **PWM Frequency**: 20 kHz to 40 kHz with center-aligned PWM and ADC sampling synchronized at the midpoint.
-- **PCB Topology**: 6-layer heavy-copper board (2 oz outer, 3 oz inner layers) for thermal conduction and low ESR power routing.
+- **Acoustic Array Architecture**:
+    - Spatial sensor placement and multi-channel microphone array integration.
+    - Microelectronics and digital signal interface design for simultaneous high-fidelity acoustic sampling.
+- **Digital Signal Processing (DSP)**:
+    - Implementation of adaptive beamforming algorithms (delay-and-sum, minimum variance distortionless response - MVDR).
+    - Spatial filtering, noise suppression, and directional sound localization in reverberant indoor environments.
+- **Simulation & Verification**:
+    - Extensive algorithm simulation and performance analysis in **MATLAB** and **Simulink** before embedded target deployment.
 
 ### :material-code-tags: Technical Stack
 
 | Domain | Tools & Technologies |
 | :--- | :--- |
-| **Hardware Design** | KiCad 8.0, FEA thermal simulation, continuous ground plane design |
-| **Control Algorithms** | FOC (Clarke/Park transformations, Space Vector PWM - SVPWM), closed-loop current and velocity PI loops |
-| **Firmware Architecture** | Embedded C++ (C++17), CMSIS-DSP, deterministic non-blocking design |
-| **Validation Instruments** | Dynamometer test bench, Hall-effect current probes, FLIR thermal imaging |
-
-### :material-check-decagram: Key Results & Achievements
-
-- **Power Efficiency**: Peak inverter efficiency of **96.8%** at rated nominal load.
-- **Dynamic Control**: Current control loop executed at **20 kHz** with less than 12 µs calculation latency on the MCU.
-- **Fault Protection**: Hardware-level cycle-by-cycle overcurrent trip, bus overvoltage clamping, and over-temperature shutdown.
+| **Signal Processing** | MATLAB, Simulink, Octave, Beamforming algorithms, Spatial filtering |
+| **Hardware & Electronics** | Digital audio interfaces, microphone array electronics, microelectronics |
+| **Scientific Discipline** | Digital Electronics, Microelectronics, Bioelectronics |
 
 ---
 
-## :material-folder-multiple: Template for New Projects
+## Project 3: Myoelectric (EMG) Signal Acquisition & FPGA Processing
 
-To document additional projects in this portfolio, use the following standardized structure:
+!!! info "Project Context — ESPOL & IEEE Publications (2016 — 2018)"
+    Design and characterization of open-source biomedical hardware for electromyographic (EMG) signal acquisition, thermal influence modeling, and real-time sensor calibration using embedded FPGA processors.
 
-```markdown
-## Project Name
+### :material-cogs: Engineering Scope & Contributions
 
-!!! info "Project Overview"
-    High-level summary of the engineering objectives and product value.
-
-### :material-cogs: Technical Specifications
-- **Parameter 1**: Description.
-- **Parameter 2**: Description.
+- **Bioelectronics Hardware Design**:
+    - Multi-stage biopotential analog front-end (AFE) with instrumentation amplifiers, high CMRR (> 100 dB), active bandpass filtering (20 Hz - 500 Hz), and baseline wander suppression.
+    - Schematic design and PCB fabrication for non-invasive surface EMG signal acquisition.
+- **FPGA Embedded Implementation**:
+    - Implementation of standard gradient descent algorithms on an embedded processor within **Intel/Altera Quartus II** for two-dimensional field sensor calibration.
+    - Real-time implementation of a **Dual Extended Kalman Filter (EKF)** for high-precision tilt and state estimation.
+- **Biomedical Research & Peer-Reviewed Publications**:
+    - Experimental studies on the influence of ambient and muscle temperature variations on EMG spectral and onset characteristics, resulting in multiple IEEE and indexed journal publications.
 
 ### :material-code-tags: Technical Stack
+
 | Domain | Tools & Technologies |
 | :--- | :--- |
-| Hardware | ECAD software, simulations, layout standards |
-| Firmware | Languages, RTOS, driver libraries |
-
-### :material-check-decagram: Key Results & Achievements
-- Quantifiable metrics verified during lab validation.
-```
+| **EDA & FPGA** | Intel/Altera Quartus II, OrCAD-PSpice, Eagle, Proteus |
+| **Analysis & Algorithms** | MATLAB, Simulink, Dual Extended Kalman Filter, Gradient Descent |
+| **Microcontrollers** | STM32, PIC (MikroC Pro), Arduino |
+| **Academic Output** | 8+ published research papers and 2 Certificates of Merit |

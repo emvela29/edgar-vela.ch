@@ -1,59 +1,73 @@
 ---
 title: Home
-description: Professional portfolio and engineering profile of Edgar Vela, Hardware and Embedded Systems Engineer.
+description: Professional engineering portfolio of Edgar Marcelo Vela Pinela - Electronics & Hardware Engineer based in Zürich, Switzerland.
 ---
 
-# Edgar Vela
+# Edgar Marcelo Vela Pinela
 
-### **Hardware & Embedded Systems Engineer**
-:material-map-marker: *Switzerland / Remote* &nbsp;|&nbsp; :material-email: [contact@edgar-vela.ch](mailto:contact@edgar-vela.ch) &nbsp;|&nbsp; :fontawesome-brands-linkedin: [LinkedIn](https://linkedin.com/in/edgar-vela) &nbsp;|&nbsp; :fontawesome-brands-github: [GitHub](https://github.com/emvela29)
+### **Hardware & Electronics Engineer**
+:material-map-marker: *Zürich, Switzerland* &nbsp;|&nbsp; :material-email: [contact@edgar-vela.ch](mailto:contact@edgar-vela.ch) &nbsp;|&nbsp; :fontawesome-brands-linkedin: [LinkedIn](https://www.linkedin.com/in/emvela/) &nbsp;|&nbsp; :fontawesome-brands-github: [GitHub](https://github.com/emvela29)
 
 ---
 
-## :material-account-tie: Professional Profile
+## :material-account-tie: About Me
 
-I am an **Electronics Engineer specializing in Hardware Design and Embedded Systems**. I bring hands-on experience across the entire product development lifecycle: from initial architecture conception, component selection, and high-speed multi-layer schematic/PCB layout, to bare-metal / RTOS firmware implementation and rigorous laboratory validation (EMI/EMC pre-compliance and industrial reliability testing).
+I am an **Electronics Engineer with +4 years of specialized experience in applied research and hardware development**, based in Zürich, Switzerland. 
 
-My engineering approach unites technical precision, Design for Manufacturing & Assembly (**DFM/DFA**), and power/cost-optimized solutions.
+Currently working at **ETH Zürich & DIAXXO AG**, I lead hardware and software engineering for innovative **Polymerase Chain Reaction (PCR)** diagnostic devices. My background bridges the gap between deep scientific research and market-ready industrial hardware: from algorithm conception and multi-layer PCB design to rapid mechanical/electronic prototyping, regulatory component procurement, and technical work instruction (QC) authoring.
+
+I hold a **Master of Science in Engineering (Industrial Technologies)** from **SUPSI** and a **B.Sc. in Electronics and Communications Engineering** from **ESPOL**. I have lived in Switzerland since 2018 (holding a Swiss B-Residence Permit) and thrive in collaborative, cross-functional environments spanning engineering, life sciences, and industrial design.
 
 [Explore Projects :octicons-arrow-right-24:](projects.md){ .md-button .md-button--primary }
-[View Experience :octicons-briefcase-24:](experience.md){ .md-button }
+[Work Experience :octicons-briefcase-24:](experience.md){ .md-button }
+[Publications & Awards :octicons-book-24:](publications.md){ .md-button }
 [Get in Touch :octicons-mail-24:](contact.md){ .md-button }
 
 ---
 
 ## :material-lightning-bolt: Core Competencies
 
-=== ":material-circuit-board: PCB & Hardware Design"
-    - **Schematic & Layout**: Multi-layer board design (4-8+ layers), microvias, controlled impedance routing for high-speed differential pairs (USB, PCIe, Ethernet, DDR).
-    - **Power Electronics**: Buck, Boost, LDO topologies, Li-Ion/LiFePO4 battery management systems (BMS), and thermal design.
-    - **ECAD Suites**: Altium Designer, KiCad, Cadence OrCAD/Allegro.
-    - **Standards**: DFM, DFA, DFT, and electromagnetic compatibility/immunity (EMC/EMI).
+=== ":material-chip: Hardware & ECAD Design"
+    - **Printed Circuit Boards**: Schematic capture and multi-layer layout using **Altium Designer**, **Autodesk Eagle**, **OrCAD-PSpice**, and **Proteus**.
+    - **Rapid Prototyping & CAD**: Electronics packaging and mechanical CAD design to advance prototypes into certified commercial end-products.
+    - **Procurement & Compliance**: Component sourcing aligned with market availability, lifecycle management, and medical/regulatory standards.
+    - **Quality Control**: Formulation of technical work instructions and comprehensive QC procedures for fabrication and assembly.
 
-=== ":material-chip: Firmware & Embedded Systems"
-    - **Microcontrollers & SoCs**: STM32 (ARM Cortex-M), ESP32, Nordic nRF52/nRF53, NXP, Microchip.
-    - **Languages & Paradigms**: Modern C/C++, Assembly, and Python for automated test benches and toolchains.
-    - **Operating Systems**: FreeRTOS, Zephyr RTOS, and ultra-low-power bare-metal architectures with deterministic timing.
-    - **Communication Protocols**: CAN / CAN-FD, SPI, I2C, UART, RS-485, Modbus, Ethernet, BLE, LoRaWAN.
+=== ":material-memory: Embedded Systems & FPGA"
+    - **Microcontrollers & Platforms**: STM32 (ARM Cortex-M), Microchip PIC (MikroC Pro), and Arduino for robotics and instrumentation.
+    - **FPGA & Logic Design**: Embedded digital design and hardware accelerators using **Intel/Altera Quartus II**.
+    - **System Architecture**: Analysis, architecture definition, and implementation of embedded hardware and firmware modules.
+    - **Multidisciplinary Integration**: Seamless interface between embedded microelectronic systems, biosensors, and actuators.
 
-=== ":material-test-tube: Validation & Lab Instrumentation"
-    - **Instruments**: Digital phosphor oscilloscopes, logic analyzers, arbitrary waveform generators, electronic loads, and programmable power supplies.
-    - **Verification**: Signal Integrity (SI), Power Integrity (PI), environmental stress screening, and thermal characterization.
-    - **Test Automation**: Automated test benches using Python (PyVISA, SCPI) for instrument control and data analysis.
+=== ":material-chart-bell-curve-cumulative: DSP & System Modeling"
+    - **Modeling & Simulation**: Dynamic system simulation using **Python**, **MATLAB**, **Simulink**, and **Octave**.
+    - **Digital Signal Processing**: Audio beamforming using antenna arrays, electromyographic (EMG) bio-signal filtering, and spectral feature extraction.
+    - **Estimation & Control**: Implementation of Gradient Descent calibration and Dual Extended Kalman Filters (EKF) on embedded targets.
+    - **Machine Learning**: Practical applications of AI in medicine and robotics.
 
 ---
 
-## :material-rocket-launch: Featured Engineering Projects
+## :material-rocket-launch: Featured Work & Engineering Projects
 
-| Project | Domain | Primary Stack | Status |
+| Project / Focus | Institution / Company | Key Technologies | Status |
 | :--- | :--- | :--- | :--- |
-| **[Ultra-Low Power Industrial IoT Sensor Node](projects.md#project-1-ultra-low-power-industrial-iot-sensor-node)** | 4-Layer PCB + Firmware | STM32L4, LoRaWAN, KiCad, C/FreeRTOS | :material-check-circle:{ .green } Completed / Fabricated |
-| **[High-Efficiency BLDC Motor Controller](projects.md#project-2-high-efficiency-bldc-motor-controller)** | Power Electronics + DSP | SiC MOSFETs, Gate Drivers, CAN-FD, C++ | :material-check-circle:{ .green } Bench-Validated |
+| **[Innovative PCR Diagnostic Devices](projects.md#project-1-point-of-care-polymerase-chain-reaction-pcr-devices)** | ETH Zürich & DIAXXO AG | Altium Designer, Rapid Prototyping, QC, Thermal & Sensor Control | :material-check-circle:{ .green } Active / Commercialized |
+| **[Audio-Domain DSP & Beamforming Array](projects.md#project-2-audio-domain-dsp-using-antenna-arrays-and-beamforming)** | SUPSI (Applied Electronics) | Spatial DSP, Antenna Arrays, Microelectronics, Embedded | :material-check-circle:{ .green } Research Validated |
+| **[Biomedical EMG Acquisition & FPGA Processing](projects.md#project-3-myoelectric-emg-signal-acquisition-fpga-processing)** | FIEC - ESPOL | Quartus II, MATLAB, Bioelectronics, Kalman Filtering | :material-check-circle:{ .green } Published in IEEE / Journals |
 
 ---
 
-## :material-send: Have a Technical Challenge?
+## :material-school: Academic & Professional Highlights
 
-Whether you are looking to collaborate on cutting-edge hardware development, optimize an existing electronic design, or need consulting on embedded systems, feel free to reach out.
+- **Master of Science in Engineering (MSE)**, Specialization in Industrial Technologies — **SUPSI** (*Southern Switzerland*).
+- **Recipient of the prestigious RETECA Foundation Scholarship** (Sept 2018) for applied research in microelectronics and engineering.
+- **Author/Co-Author of 8+ peer-reviewed publications** in international conferences and biomedical engineering journals.
+- **Former President of ESPOL Robotics Club** (overseeing national/international competitions and FIRST Robotics mentorship in New York).
 
-[:octicons-paper-airplane-24: Send an inquiry to contact@edgar-vela.ch](contact.md){ .md-button .md-button--primary }
+---
+
+## :material-send: Let's Connect
+
+Whether you want to discuss medical device hardware, embedded development, or explore new engineering opportunities:
+
+[:octicons-paper-airplane-24: Contact Edgar Vela](contact.md){ .md-button .md-button--primary }

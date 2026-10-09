@@ -1,7 +1,7 @@
-site_name: Edgar Vela | Hardware Engineer
+site_name: Edgar Vela | Hardware & Electronics Engineer
 site_url: https://edgar-vela.ch
-site_author: Edgar Vela
-site_description: Professional portfolio of Edgar Vela - Hardware & Embedded Systems Engineer specializing in PCB design, firmware development, and system validation.
+site_author: Edgar Marcelo Vela Pinela
+site_description: Professional portfolio of Edgar Vela - Hardware & Electronics Engineer based in Zürich, Switzerland. Specializing in PCR biomedical devices, embedded systems, PCB design, and DSP.
 
 theme:
   name: material
@@ -46,7 +46,7 @@ extra:
       link: https://github.com/emvela29
       name: GitHub
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/edgar-vela
+      link: https://www.linkedin.com/in/emvela/
       name: LinkedIn
     - icon: fontawesome/solid/envelope
       link: mailto:contact@edgar-vela.ch
@@ -82,4 +82,5 @@ nav:
   - Home: index.md
   - Projects: projects.md
   - Experience: experience.md
+  - Publications: publications.md
   - Contact: contact.md
