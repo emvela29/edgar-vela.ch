@@ -1,0 +1,85 @@
+site_name: Edgar Vela | Hardware Engineer
+site_url: https://edgar-vela.ch
+site_author: Edgar Vela
+site_description: Portafolio profesional de Edgar Vela - Ingeniero de Hardware y Electrónica especializado en diseño de PCB, firmware embebido y validación de sistemas.
+
+theme:
+  name: material
+  language: es
+  palette:
+    # Modo Claro
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    # Modo Oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    logo: material/chip
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/emvela29
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/edgar-vela
+      name: LinkedIn
+    - icon: fontawesome/solid/envelope
+      link: mailto:contact@edgar-vela.ch
+      name: Correo electrónico
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+nav:
+  - Inicio: index.md
+  - Proyectos: projects.md
+  - Experiencia: experience.md
+  - Contacto: contact.md
